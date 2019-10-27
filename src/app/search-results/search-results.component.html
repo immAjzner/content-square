@@ -1,0 +1,23 @@
+<div class="search-results">
+  <div class="user-details flexed" *ngFor="let result of searchResults" (click)="chooseUser(result)">
+    <img [src]="result.picture.thumbnail">
+    <div class="user-id">
+      <div class="name">{{result.name.first}} {{result.name.last}}</div>
+      <div>{{result.email}}</div>
+      <div>{{result.gender}}</div>
+    </div>
+  </div>
+</div>
+<div class="promo user-details" *ngIf="usersPromo">
+  <img [src]="usersPromo.picture.thumbnail">
+  <div class="user-id">
+    <div class="name">{{usersPromo.name.first}} {{usersPromo.name.last}}</div>
+    <div>{{usersPromo.email}}</div>
+    <div>{{usersPromo.gender}}</div>
+    <div>{{usersPromo.location.street.name}}</div>
+    <div>{{usersPromo.location.city}}</div>
+    <div>{{usersPromo.location.country}}</div>
+    <div>{{usersPromo.location.coordinates.latitude}}</div>
+    <div>{{usersPromo.location.coordinates.longitude}}</div>
+  </div>
+</div>

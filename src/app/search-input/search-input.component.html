@@ -1,0 +1,7 @@
+<div class="search">
+  <input type="text" [(ngModel)]="searchInput" (keydown)="searchUsers()">
+  <button (click)="getUsersDetails()">Search</button>
+</div>
+<div class="auto-complete-dropdown">
+  <div *ngFor="let name of names" (click)="getUsersDetails(name)" class="search-option">{{ name }}</div>
+</div>

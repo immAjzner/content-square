@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    justify-content: space-between;
+    .search-results {
+        height: 40vh;
+        overflow: scroll;
+        width: 50%;
+    }
+    .promo {
+        width: 35%;
+    }
+    .user-id {
+        display: flex;
+        flex-direction: column;
+        color: grey;
+        .name {
+            color: purple;
+            font-weight: bold;
+        }
+    }
+    .user-details {
+        background: lightgray;
+        margin-bottom: 10px;
+        background: lightgray;
+        &.flexed {
+            display: flex;
+        }
+    }
+}
